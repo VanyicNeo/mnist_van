@@ -1,11 +1,15 @@
-from sys.dataset_load import *
+from dataset_load import *
 import matplotlib.pyplot as plt
+
+
 train_set='./training.pt'
 test_set='./test.pt'
 train_data=mnist_data(train_set)
 train_data=mnist_data(test_set)
 
+
 def data_show(data):
+    #数据集展示
     for (cnt,i) in enumerate(data):
         img = i['pic']
         lab = i['label']
