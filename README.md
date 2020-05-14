@@ -10,5 +10,8 @@ identify.py：
 LinearNet.py：
 对线性回归函数的复写
 
+tensor_to_pic.py：
+向量到图片的转换函数
+
 MODEL文件夹内的mnist_van.checkpoint是预训练文件，即无需训练也可以直接使用identify功能
 
