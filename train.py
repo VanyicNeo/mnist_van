@@ -39,14 +39,6 @@ test_set=DataLoader(
     batch_size=config.getint("LINEAR_ARGS","TEST_BATCHSIZE"))
 
 #构建线性回归器
-'''
-net=LinearNet(
-    #in_features=28*28
-    config.getint("DATA_ARGS","INPUT_SIZE1")*config.getint("DATA_ARGS","INPUT_SIZE2"),
-    #out_features=10
-    config.getint("DATA_ARGS","OUTPUT_CLASSES_NUM")
-    )
-    '''
 net=new_linearNet()
 
 #构建损失函数
