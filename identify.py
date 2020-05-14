@@ -3,9 +3,9 @@ import random
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-from method.LinearNet import new_linearNet
+from tensor_to_pic import tensor_to_PIL
+from method.LinearNet import LinearNet,new_linearNet
 from configparser import ConfigParser
-from method.LinearNet import LinearNet
 from torchvision import datasets,transforms
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
