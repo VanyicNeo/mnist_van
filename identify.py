@@ -2,7 +2,6 @@ import torch
 import random
 import numpy as np
 from PIL import Image
-from torchvision import transforms
 import matplotlib.pyplot as plt
 from method.LinearNet import new_linearNet
 from configparser import ConfigParser
@@ -10,14 +9,6 @@ from method.LinearNet import LinearNet
 from torchvision import datasets,transforms
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
-
-def tensor_to_PIL(tensor):
-    
-    unloader = transforms.ToPILImage()
-    image = tensor.cpu().clone()
-    image = image.squeeze(0)
-    image = unloader(image)
-    return image
 
 config=ConfigParser()
 config.read("config.ini",encoding="utf-8")
