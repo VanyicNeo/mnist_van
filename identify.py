@@ -25,14 +25,7 @@ config.read("config.ini",encoding="utf-8")
 checkpoint_path=config.get("PATH","MODEL_PATH")
 pretrained_model_state=torch.load(checkpoint_path)
 
-'''
-model=LinearNet(
-    #in_features=28*28
-    config.getint("DATA_ARGS","INPUT_SIZE1")*config.getint("DATA_ARGS","INPUT_SIZE2"),
-    #out_features=10
-    config.getint("DATA_ARGS","OUTPUT_CLASSES_NUM")
-    )
-    '''
+
 model=new_linearNet()
 model.load_state_dict(pretrained_model_state)
 print(pretrained_model_state,model)
