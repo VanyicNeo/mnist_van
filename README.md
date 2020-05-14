@@ -15,3 +15,4 @@ tensor_to_pic.py：
 
 MODEL文件夹内的mnist_van.checkpoint是预训练文件，即无需训练也可以直接使用identify功能
 
+其他方法后续补充
