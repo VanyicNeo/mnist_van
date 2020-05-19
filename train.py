@@ -1,6 +1,5 @@
 import os
 import torch
-from acc_calculate import acc_cal
 from torch import nn,optim
 from torch.autograd import Variable
 from torchvision import datasets,transforms
